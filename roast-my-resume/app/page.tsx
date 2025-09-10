@@ -53,7 +53,7 @@ export default function Home() {
   const [language, setLanguage] = useState<Languages | null>(null);
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
-  const [apiResponse, setApiResponse] = useState<any>(null);
+  const [apiResponse, setApiResponse] = useState<string| null>(null);
   const [roastResult, setRoastResult] = useState<string | null>(null);
   const [showResumeText, setShowResumeText] = useState(false);
 
