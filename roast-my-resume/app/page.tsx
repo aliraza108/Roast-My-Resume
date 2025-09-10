@@ -149,7 +149,7 @@ export default function Home() {
                     type="file" 
                     accept="application/pdf" 
                     onChange={handleFileChange}
-                    className="file:mr-4 file:py-3 file:px-6 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-zinc-800 file:text-zinc-200 hover:file:bg-zinc-700 transition-colors cursor-pointer border-2 border-dashed border-zinc-700/50 hover:border-zinc-500/50 bg-[#1A1A1A] text-zinc-300 rounded-xl"
+                    className="file:mr-4 file:py-3 p-1 file:px-6 file:square file:border-0 file:text-sm file:font-semibold file:bg-zinc-800 file:text-zinc-200 hover:file:bg-zinc-700 transition-colors cursor-pointer border-2 border-dashed border-zinc-700/50 hover:border-zinc-500/50 bg-[#1A1A1A] text-zinc-300 square-xl"
                   />
                   {file && (
                     <div className="flex items-center gap-3 p-4 bg-green-500/10 border border-green-500/20 rounded-xl">
