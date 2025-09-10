@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Upload, FileText, Zap, Users, Globe, Eye, EyeOff, Flame, Loader2, Lightbulb, TrendingUp, Linkedin, Briefcase, Facebook, Github, Instagram, Mail } from "lucide-react";
-import Link from "next/link";
 // Enum definitions (unchanged)
 enum RoastLevel {
   soft = "Soft-hearted",
