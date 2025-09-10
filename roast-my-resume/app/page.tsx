@@ -46,6 +46,17 @@ enum Languages {
   bothHindiAndEnglish = "Both Hindi and English",
 }
 
+interface ApiResponse {
+  file: string;
+  roast_level: string;
+  roast_status: string;
+  role_type: string;
+  language: string;
+  resume_text: string;
+  roast: string;
+}
+
+
 export default function Home() {
   const [roastLevel, setRoastLevel] = useState<RoastLevel | null>(null);
   const [roastStatus, setRoastStatus] = useState<RoastStatus | null>(null);
@@ -53,7 +64,7 @@ export default function Home() {
   const [language, setLanguage] = useState<Languages | null>(null);
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
-  const [apiResponse, setApiResponse] = useState<string| null>(null);
+  const [apiResponse, setApiResponse] = useState<ApiResponse | null>(null);
   const [roastResult, setRoastResult] = useState<string | null>(null);
   const [showResumeText, setShowResumeText] = useState(false);
 
