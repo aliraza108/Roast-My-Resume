@@ -1,5 +1,5 @@
 "use client";
-
+import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 import { Card, CardContent, } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -310,9 +310,10 @@ export default function Home() {
                   <Flame className="w-8 h-8 text-[#FF5B86]" />
                   <h3 className="text-2xl font-bold text-zinc-100">Your Roast is Ready!</h3>
                 </div>
-                <div className="prose prose-invert max-w-none text-zinc-300 leading-relaxed whitespace-pre-line text-lg">
-                  {roastResult}
-                </div>
+                <div className="prose prose-invert max-w-none text-zinc-300 leading-relaxed text-lg">
+  <ReactMarkdown>{roastResult || ""}</ReactMarkdown>
+</div>
+
               </div>
             )}
 
